@@ -1,5 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-ap Chanege board
+## Chanege board
+you can chnage the baord the you want to solve , by changing the InitialBoard Global variable in board.jsx file
 ## Available Scripts
 
 In the project directory, you can run:
