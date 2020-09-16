@@ -1,0 +1,136 @@
+
+.singleCell{
+    display: grid;
+    grid-template-areas:
+    "q w e"
+    "a s d"
+    "z x c" ;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(3 , 1fr);
+    width: 50px;
+    height: 50px;
+    border: 1px solid #36649c;
+}
+.Cell-toggle{
+    animation-name: Fill;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+@keyframes Fill {
+    0% {
+      transform: scale(0.3);
+      background-color: #3380cc;
+    }
+  
+    50% {
+      transform: scale(.6);
+        background-color: 	#33cccc;
+    }
+
+    75% {
+        transform: scale(.9);
+          background-color: 	#33cc33;
+      }
+  
+    100% {
+      transform: scale(1);
+      background-color: #33cc80;
+    }
+  }
+  
+.CellPressed{
+    border: 1px solid #ffff00;
+}
+.robabilty-box{
+    color: #456894;
+    font-weight: 600;
+    font-size: 10px;
+   
+}
+.robabilty-box-hover{
+    font-weight: bolder;
+}
+.center{
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 1px;
+    grid-area: s;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.right{
+    padding-right: 2px;
+    align-self: center;
+    justify-self: end;
+    grid-area: d;
+}
+.left{
+    padding-left: 2px;
+    align-self: center;
+    justify-self: start;
+    grid-area: a;
+}
+.upper-right{
+    padding-right: 2px;
+    padding-top: 2px;
+    align-self: start;
+    justify-self: end;
+    grid-area: e;
+}
+.lower-right{
+    padding-right: 2px;
+    padding-bottom: 2px;
+    align-self: center;
+    justify-self: end;
+    grid-area: c;
+}
+.upper-left{
+    padding-left: 2px;
+    padding-top: 2px;
+    align-self: center;
+    justify-self: start;
+    grid-area: q;
+}
+.lower-left{
+    padding-left: 2px;
+    padding-bottom: 2px;
+
+    align-self: center;
+    justify-self: start;
+    grid-area: z;
+}
+.up{
+    padding-top: 2px;
+    align-self: center;
+    justify-self: center;
+    grid-area: w;
+}
+.down{
+    padding-bottom: 2px;
+    align-self: center;
+    justify-self: center;
+    grid-area: x;
+}
+
+.top-border {
+    border-top: 2px solid #1c5cac;
+}
+.bottom-border {
+    border-bottom: 2px solid #1c5cac;
+}
+.right-border {
+    border-right: 2px solid #1c5cac;
+}
+.left-border {
+    border-left: 2px solid #1c5cac  ;
+}
